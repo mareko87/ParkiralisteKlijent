@@ -7,20 +7,17 @@ package forms.organizacija;
 
 import controller.ClientController;
 import domain.Organizacija;
-import domain.Parkiraliste;
 import domain.Vozilo;
 import forms.MainForm;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import models.TableModelNovaVozila;
 
 /**
  *
- * @author 38160
+ * @author Marko Milosevic
  */
 public class FormNovaOrganizacija extends javax.swing.JDialog {
 

@@ -8,19 +8,19 @@ package forms.administrator;
 import controller.ClientController;
 import domain.Administrator;
 import java.awt.event.KeyEvent;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import models.TableModelAdministratori;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class FormPretragaAdministratora extends javax.swing.JDialog {
 
     /**
      * Creates new form FormPretragaClanova
+     * @param parent
+     * @param modal
      */
     public FormPretragaAdministratora(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

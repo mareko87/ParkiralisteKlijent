@@ -10,14 +10,12 @@ import domain.Administrator;
 import java.awt.event.KeyEvent;
 import java.net.SocketException;
 import java.util.regex.Pattern;
-import javax.security.auth.login.LoginException;
 import javax.swing.JOptionPane;
 import session.Session;
-import transfer.Request;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class Login extends javax.swing.JFrame {
     
@@ -235,6 +233,7 @@ public class Login extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 Login login = new Login();
                 login.setLocationRelativeTo(null);
@@ -273,7 +272,7 @@ public class Login extends javax.swing.JFrame {
 
         } catch (Exception e) {
             if (e instanceof SocketException) {
-                JOptionPane.showMessageDialog(rootPane, "Greska prilikom logovanja: " + "Komunikacija izmedju servera je prekinuta");
+                JOptionPane.showMessageDialog(rootPane, "Greska prilikom logovanja: " + "Komunikacija sa serverom je prekinuta");
                 this.dispose();
                 System.exit(0);
             } else {

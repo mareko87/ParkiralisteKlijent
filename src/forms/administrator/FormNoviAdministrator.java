@@ -8,9 +8,7 @@ package forms.administrator;
 import controller.ClientController;
 import domain.Administrator;
 import domain.Parkiraliste;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
@@ -18,12 +16,14 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author 38160
+ * @author Marko Milosevic
  */
 public class FormNoviAdministrator extends javax.swing.JDialog {
 
     /**
      * Creates new form FormNoviTrener3
+     * @param parent
+     * @param modal
      */
     public FormNoviAdministrator(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -271,7 +271,7 @@ public class FormNoviAdministrator extends javax.swing.JDialog {
             this.dispose();
 
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, ex.getMessage());
+            JOptionPane.showMessageDialog(this, "Greska prilikom dodavanja administratora: " + ex.getMessage());
 //            Logger.getLogger(FormNoviAdministrator.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnDodajAdminaActionPerformed

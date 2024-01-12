@@ -7,14 +7,11 @@ package session;
 
 import domain.Administrator;
 import java.io.IOException;
-import java.net.Inet4Address;
 import java.net.Socket;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class Session {
 
@@ -26,7 +23,7 @@ public class Session {
         try {
             socket = new Socket("localhost" ,10000);
         } catch (IOException ex) {
-            ex.printStackTrace();
+            System.err.println("Greska prilikom instanciranja soketa: " + ex.getMessage());
         }
     }
 

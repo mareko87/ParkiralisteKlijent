@@ -21,13 +21,13 @@ import transfer.util.ResponseStatus;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class ClientController {
 
     private static ClientController instance;
 
-    public ClientController() {
+    private ClientController() {
     }
 
     public static ClientController getInstance() {
@@ -108,12 +108,9 @@ public class ClientController {
     private Object sendRequest(int operation, Object data) throws Exception {
         Request req = new Request(operation, data);
         
-        // ovo salje zahtev preko socketa, 
-        // vodi te u ThreadClient gde primas zahtev
         ObjectOutputStream out = new ObjectOutputStream(Session.getInstance().getSocket().getOutputStream());
         out.writeObject(req);
         
-        // primas odgovor koji ti vraca ThreadClient
         ObjectInputStream in = new ObjectInputStream(Session.getInstance().getSocket().getInputStream());
         Response res = (Response) in.readObject();
         

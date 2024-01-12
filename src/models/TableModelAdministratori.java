@@ -15,7 +15,7 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class TableModelAdministratori extends AbstractTableModel implements Runnable {
     

@@ -6,7 +6,6 @@
 package models;
 
 import controller.ClientController;
-import domain.Organizacija;
 import domain.Racun;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class TableModelRacuni extends AbstractTableModel implements Runnable {
 

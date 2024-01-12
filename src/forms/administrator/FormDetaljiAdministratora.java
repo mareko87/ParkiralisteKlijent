@@ -9,10 +9,7 @@ import controller.ClientController;
 import domain.Administrator;
 import domain.Parkiraliste;
 import java.awt.event.KeyEvent;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
@@ -21,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class FormDetaljiAdministratora extends javax.swing.JDialog {
 

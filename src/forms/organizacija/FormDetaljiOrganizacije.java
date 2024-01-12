@@ -7,7 +7,6 @@ package forms.organizacija;
 
 import controller.ClientController;
 import domain.Organizacija;
-import domain.Parkiraliste;
 import domain.Vozilo;
 import forms.MainForm;
 import java.awt.event.KeyEvent;
@@ -21,7 +20,7 @@ import models.TableModelVozila;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class FormDetaljiOrganizacije extends javax.swing.JDialog {
 

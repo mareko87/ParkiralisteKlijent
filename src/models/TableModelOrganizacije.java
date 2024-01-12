@@ -7,18 +7,16 @@ package models;
 
 import forms.organizacija.FormPretragaOrganizacije;
 import controller.ClientController;
-import domain.Administrator;
 import domain.Organizacija;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class TableModelOrganizacije extends AbstractTableModel implements Runnable {
     

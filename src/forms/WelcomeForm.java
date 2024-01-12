@@ -7,17 +7,19 @@ package forms;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.Timer;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class WelcomeForm extends javax.swing.JDialog implements ActionListener{
 
     /**
      * Creates new form WelcomeForm
+     * @param parent
+     * @param modal
+     * @param message
      */
     public WelcomeForm(java.awt.Frame parent, boolean modal, String message) {
         super(parent, modal);

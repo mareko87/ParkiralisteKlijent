@@ -7,20 +7,15 @@ package forms.organizacija;
 
 import controller.ClientController;
 import domain.Organizacija;
-import forms.MainForm;
 import java.awt.event.KeyEvent;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
 import models.TableModelOrganizacije;
 
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class FormPretragaOrganizacije extends javax.swing.JDialog {
     

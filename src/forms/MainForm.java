@@ -9,17 +9,14 @@ import forms.administrator.FormNoviAdministrator;
 import forms.administrator.FormPretragaAdministratora;
 import forms.organizacija.FormNovaOrganizacija;
 import forms.organizacija.FormPretragaOrganizacije;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import controller.ClientController;
 import domain.Administrator;
 import domain.Organizacija;
 import domain.Racun;
 import domain.Vozilo;
-import forms.administrator.FormDetaljiAdministratora;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -31,13 +28,12 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
-import javax.swing.table.TableModel;
 import models.TableModelRacuni;
 import session.Session;
 
 /**
  *
- * @author 38160
+ * @author Marko Milosevic
  */
 public class MainForm extends javax.swing.JFrame {
 
